@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="titulo"></h1>
-
+    <div id="div1" class="minhadiv">
+        Este é o conteudo secreto 
+    </div>
 
 
     <script>
         resposta=confirm("Site com conteúdo Secreto,deseja entrar?");
-        document.getElementById("titulo").innerHTML= resposta;
+        eoh1 = document.getElementById("titulo");
+        if(resposta){
+            eoh1.innerHTML = "Voce aceitou as condições";
+            eoh1.style.color="green";
+            eoh1.style.width="50%";
+            eoh1.style.margin ="0 auto ";
+            //exibir a div1
+            document.getElementById("div1").style.display="block";
+        } else{ 
+            eoh1.innerHTML = "O conteudo foi ocultado";
+            eoh1.style.color="red";
+
+        }
+        
     </script>
     
 </body>

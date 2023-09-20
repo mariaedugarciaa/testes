@@ -1,0 +1,7 @@
+.minhadiv{
+    border: 10px solid blue;
+    background-color: rgb(16, 196, 181);
+    padding: 50px;
+    text-align: center;
+    display: none;
+}
